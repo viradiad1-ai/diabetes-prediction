@@ -55,10 +55,10 @@ accuracy = accuracy_score(y_test, model.predict(X_test))
 
 st.subheader("Prediction Result")
 if prediction[0] == 0:
-    st.success("✅ You are NOT Diabetes")
+    st.success("✅ You have NOT Diabetes")
     color = "blue"
 else:
-    st.error("⚠️ You are Diabetes")
+    st.error("⚠️ You have Diabetes")
     color = "red"
 
 st.write(f"Model Accuracy: {accuracy*100:.2f}%")
